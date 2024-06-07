@@ -158,10 +158,13 @@
             <xs:attribute ref="OpenClinica:Url" />
             <xs:attribute ref="OpenClinica:StatusChangeTimeStamp" />
 		</xs:attributeGroup>
-
+		<xs:attributeGroup name="ItemGroupDataAttributeExtension">
+			<xs:attributeGroup ref="ItemGroupDataAttributeExtension" />
+			<xs:attribute ref="OpenClinica:Removed" />
+		</xs:attributeGroup>
 		<xs:attributeGroup name="ItemDataAttributeExtension">
-		  <xs:attributeGroup ref="ItemDataAttributeExtension" />
-		  <xs:attribute ref="OpenClinica:ReasonForNull" />
+		  	<xs:attributeGroup ref="ItemDataAttributeExtension" />
+		  	<xs:attribute ref="OpenClinica:ReasonForNull" />
 		</xs:attributeGroup>
 	</xs:redefine>
 </xs:schema>
